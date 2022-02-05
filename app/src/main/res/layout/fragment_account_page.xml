@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        tools:context=".AccountPageFragment">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_user"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tv_username_attribute"
+            style="@style/Account.Attribute"
+            android:text="@string/username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/tv_username_value"
+            style="@style/Account.Value"
+            app:layout_constraintStart_toEndOf="@+id/tv_username_attribute"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:text="@string/string_value" />
+        <TextView
+            android:id="@+id/tv_age_attribute"
+            style="@style/Account.Attribute"
+            android:text="@string/age"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username_value" />
+
+        <TextView
+            android:id="@+id/tv_age_value"
+            style="@style/Account.Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_age_attribute"
+            app:layout_constraintTop_toBottomOf="@+id/tv_username_value"
+            android:text="@string/int_value" />
+
+        <TextView
+            android:id="@+id/tv_gameplayed_attribute"
+            style="@style/Account.Attribute"
+            android:text="@string/games_played"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_age_value" />
+
+        <TextView
+            android:id="@+id/tv_gameplayed_value"
+            style="@style/Account.Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_gameplayed_attribute"
+            app:layout_constraintTop_toBottomOf="@+id/tv_age_value"
+            android:text="@string/int_value" />
+
+        <TextView
+            android:id="@+id/tv_favorite_attribute"
+            style="@style/Account.Attribute"
+            android:text="@string/favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gameplayed_value" />
+
+        <TextView
+            android:id="@+id/tv_favorite_value"
+            style="@style/Account.Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_favorite_attribute"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gameplayed_value"
+            android:text="@string/string_value" />
+
+        <TextView
+            android:id="@+id/tv_followers_attribute"
+            style="@style/Account.Attribute"
+            android:text="@string/followers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_favorite_value" />
+
+        <TextView
+            android:id="@+id/tv_followers_value"
+            style="@style/Account.Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_followers_attribute"
+            app:layout_constraintTop_toBottomOf="@+id/tv_favorite_value"
+            android:text="@string/int_value"/>
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/color_secondary"
+            android:text="@string/edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_followers_value" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
